@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar with all actions  -->
+    <nav id="navbar">
+        <button id="addRow">Add Row</button>
+        <button id="addCol">Add Column</button>
+        <button id="removeRow">Remove Row</button>
+        <button id="removeCol">Remove Column</button>
+        <!-- dropdown for selecting color -->
+        <select id="colorPicker">
+            <option value="">Select Color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+            <option value="purple">Purple</option>
+        </select>
+        <button id="colorCell">Color Cell</button>
+        <button id="colorUncolored">Color Uncolored</button>
+        <button id="colorAll">Color All</button>
+        <button id="clearGrid">Clear Grid</button>
+    </nav>
+
+    <!-- main area where the grid shows up -->
+    <main>
+        <table id="grid"></table>
+    </main>
+
+    <!-- js file with all the functions -->
+    <script src="script.js"></script>
+</body>
+</html>

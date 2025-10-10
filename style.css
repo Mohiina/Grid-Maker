@@ -1,0 +1,50 @@
+/* page basics */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+/*  navbar across the top */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* light gray */
+    padding: 10px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc; /* small divider line */
+}
+
+/* buttons and dropdown look */
+nav button, nav select {
+    margin: 5px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+/* small hover effect */
+nav button:hover, nav select:hover {
+    background-color: #e6e6e6;
+    transform: scale(1.05);
+}
+
+/* grid layout area */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+/* each cell box */
+td {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
