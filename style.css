@@ -39,10 +39,10 @@ body {
   
   /* grid layout area */
   table {
-    border-collapse: separate;  /* makes borders independent */
-    border-spacing: 6px;        /* space between cells */
-    border: none;               /* rmvs the outer border */
-    background: none;           /* rmvs background */
+    border-collapse: separate;  /*make borders independent */
+    border-spacing: 6px;        /*space between cells */
+    border: none;               /*rmvs the outer border */
+    background: none;           /*rmvs background */
     margin: 20px auto;
   }
   

@@ -21,6 +21,9 @@
         grid.appendChild(row);
     }
 
+    // add a new col
+   
+
     // set up buttons to do stuff when clicked
     document.getElementById("addRow").addEventListener("click", addRow);
     document.getElementById("addCol").addEventListener("click", addColumn);
@@ -32,7 +35,7 @@
     document.getElementById("clearGrid").addEventListener("click", clearGrid);
   
     // empty funcs for now, will add logic later
-    function addColumn() {}
+    
     function removeRow() {}
     function removeColumn() {}
     function colorSingleCell() {}
