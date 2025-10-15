@@ -21,6 +21,23 @@
         grid.appendChild(row);
     }
 
+    function addColumn() {
+        // if no rows -> make 1 row + 1 cell
+        if (grid.rows.length === 0) {
+            const row = document.createElement("tr");
+            const cell = document.createElement("td");
+            row.appendChild(cell);
+            grid.appendChild(row);
+            return;
+        }
+    
+        // add 1 cell to each row
+        for (let i = 0; i < grid.rows.length; i++) {
+            const cell = document.createElement("td");
+            grid.rows[i].appendChild(cell);
+        }
+    }
+
     // set up buttons to do stuff when clicked
     document.getElementById("addRow").addEventListener("click", addRow);
     document.getElementById("addCol").addEventListener("click", addColumn);
@@ -32,7 +49,6 @@
     document.getElementById("clearGrid").addEventListener("click", clearGrid);
   
     // empty funcs for now, will add logic later
-    function addColumn() {}
     function removeRow() {}
     function removeColumn() {}
     function colorSingleCell() {}
