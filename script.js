@@ -45,6 +45,9 @@
         // rmv last row
         grid.deleteRow(-1);
     }
+
+
+    
     
     // set up buttons to do stuff when clicked
     document.getElementById("addRow").addEventListener("click", addRow);
