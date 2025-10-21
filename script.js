@@ -89,6 +89,19 @@
         });
     }
 
+    function colorUncoloredCells() 
+    {
+        for (let r of grid.rows)        // go thru every row in grid
+        {
+            for (let c of r.cells)      // go thru each cell in row
+            {
+                if (!c.style.backgroundColor || c.style.backgroundColor === "white")        // only color cells that are white/empty
+                {
+                    c.style.backgroundColor = colorPicker.value;
+                }
+            }
+        }
+    }
 
    
 
@@ -105,8 +118,6 @@
     document.getElementById("clearGrid").addEventListener("click", clearGrid);
   
     // empty funcs for now, will add logic later
- 
-    function colorUncoloredCells() {}
     function colorAllCells() {}
     function clearGrid() {}
   
