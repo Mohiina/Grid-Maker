@@ -60,7 +60,39 @@
         }
     }
 
-    
+
+    function colorSingleCell()
+    {
+        let colorMode = true; // turn coloring on
+
+        // when user clicks on grid  
+        grid.addEventListener("click", (elem) => 
+        {
+            // if in color mode and clicked spot is a cell  
+            if (colorMode && elem.target.tagName === "TD") 
+            {
+                // fill that cell with chosen color  
+                elem.target.style.backgroundColor = colorPicker.value;
+            }
+        });
+
+        document.querySelectorAll("button").forEach(btn =>        // --- stop color mode when other btns clicked 
+        {
+            btn.addEventListener("click", (e) => 
+            {
+                // only stop mode AFTER the clicked button runs its action
+                if (btn.id !== "colorCell") 
+                {
+                    setTimeout(() => (colorMode = false), 50);
+                }
+            });
+        });
+    }
+
+
+   
+
+  
     
     // set up buttons to do stuff when clicked
     document.getElementById("addRow").addEventListener("click", addRow);
@@ -73,7 +105,7 @@
     document.getElementById("clearGrid").addEventListener("click", clearGrid);
   
     // empty funcs for now, will add logic later
-    function colorSingleCell() {}
+ 
     function colorUncoloredCells() {}
     function colorAllCells() {}
     function clearGrid() {}
