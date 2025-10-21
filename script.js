@@ -46,6 +46,19 @@
         grid.deleteRow(-1);
     }
 
+    function removeColumn() {
+        // no rows -> nothing to rmv
+        if (grid.rows.length === 0) return;
+    
+        // check col count
+        const cols = grid.rows[0].cells.length;
+        if (cols === 0) return;
+    
+        // rmv last cell from each row
+        for (let r of grid.rows) {
+            r.deleteCell(-1);
+        }
+    }
 
     
     
@@ -60,7 +73,6 @@
     document.getElementById("clearGrid").addEventListener("click", clearGrid);
   
     // empty funcs for now, will add logic later
-    function removeColumn() {}
     function colorSingleCell() {}
     function colorUncoloredCells() {}
     function colorAllCells() {}
