@@ -114,7 +114,16 @@
     }
     
 
-  
+    function clearGrid() {
+        // get all cells in table
+        const cells = grid.getElementsByTagName("td");
+    
+        // loop thru each and clear color
+        for (let cell of cells) {
+            cell.style.backgroundColor = ""; // reset color
+        }
+    }
+    
     
     // set up buttons to do stuff when clicked
     document.getElementById("addRow").addEventListener("click", addRow);
@@ -127,6 +136,6 @@
     document.getElementById("clearGrid").addEventListener("click", clearGrid);
   
     // empty funcs for now, will add logic later
-    function clearGrid() {}
+    
   
   
