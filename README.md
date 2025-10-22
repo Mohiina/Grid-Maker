@@ -35,10 +35,13 @@ https://github.com/Mohiina
 - **JavaScript (DOM Manipulation)** — Interactivity  
 
 ## File Structure
+```
 grid-maker/
-├── index.html # Main webpage
-├── style.css # Styles for the layout and grid
-└── script.js # Grid logic and event handling
+├── index.html      # Main webpage
+├── style.css       # Styles for the layout and grid
+└── script.js       # Grid logic and event handling
+```
+
 
 
 ## How to Run
