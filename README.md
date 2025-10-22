@@ -1,12 +1,16 @@
 # Grid Maker
 
+A simple interactive web app that lets users dynamically create, modify, and color a grid using HTML, CSS, and JavaScript.
+
 ## Group Members
 
 Name:            Mokhinabonu Ubaydulloeva 
-GitHub Username: @Mohiina]
+
+GitHub Username: @Mohiina
+
 https://github.com/Mohiina
 
-A simple interactive web app that lets users dynamically create, modify, and color a grid using HTML, CSS, and JavaScript.
+
 
 ## Features
 - **Add Row / Add Column** – Expand the grid as needed.  
