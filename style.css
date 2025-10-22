@@ -4,10 +4,10 @@ body {
     text-align: center;
     margin: 0;
     background-color: #f9f9f9;
-}
-
-/*  navbar across the top */
-nav {
+  }
+  
+  /* navbar across the top */
+  nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,10 +15,11 @@ nav {
     padding: 10px;
     flex-wrap: wrap;
     border-bottom: 1px solid #ccc; /* small divider line */
-}
-
-/* buttons and dropdown look */
-nav button, nav select {
+  }
+  
+  /* buttons and dropdown look */
+  nav button,
+  nav select {
     margin: 5px;
     padding: 8px 12px;
     border: 1px solid #ccc;
@@ -27,29 +28,29 @@ nav button, nav select {
     color: #333;
     cursor: pointer;
     transition: background-color 0.2s, transform 0.1s;
-}
-
-/* small hover effect */
-nav button:hover, nav select:hover {
+  }
+  
+  /* small hover effect */
+  nav button:hover,
+  nav select:hover {
     background-color: #e6e6e6;
     transform: scale(1.05);
-}
-
-/* grid layout area */
-table {
+  }
+  
+  /* grid layout area */
+  table {
+    border-collapse: separate;  /*make borders independent */
+    border-spacing: 6px;        /*space between cells */
+    border: none;               /*rmvs the outer border */
+    background: none;           /*rmvs background */
     margin: 20px auto;
-    border-collapse: separate;
-    border-spacing: 4px; /*adds space between cells */
-    border: none; /*removes the outer border*/
-}
-
-/* each cell box */
-td {
-    width: 50px;
-    height: 50px;
-    border: 1px solid #858585;
-    
+  }
+  
+  /* each cell box */
+  td {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
     background-color: white;
-    
-}
-
+  }
+  
