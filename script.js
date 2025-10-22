@@ -21,9 +21,47 @@
         grid.appendChild(row);
     }
 
-    // add a new col
-   
+    function addColumn() {
+        // if no rows -> make 1 row + 1 cell
+        if (grid.rows.length === 0) {
+            const row = document.createElement("tr");
+            const cell = document.createElement("td");
+            row.appendChild(cell);
+            grid.appendChild(row);
+            return;
+        }
+    
+        // add 1 cell to each row
+        for (let i = 0; i < grid.rows.length; i++) {
+            const cell = document.createElement("td");
+            grid.rows[i].appendChild(cell);
+        }
+    }
 
+    function removeRow() {
+        // no rows -> nothing to rmv
+        if (grid.rows.length === 0) return;
+    
+        // rmv last row
+        grid.deleteRow(-1);
+    }
+
+    function removeColumn() {
+        // no rows -> nothing to rmv
+        if (grid.rows.length === 0) return;
+    
+        // check col count
+        const cols = grid.rows[0].cells.length;
+        if (cols === 0) return;
+    
+        // rmv last cell from each row
+        for (let r of grid.rows) {
+            r.deleteCell(-1);
+        }
+    }
+
+    
+    
     // set up buttons to do stuff when clicked
     document.getElementById("addRow").addEventListener("click", addRow);
     document.getElementById("addCol").addEventListener("click", addColumn);
@@ -35,9 +73,6 @@
     document.getElementById("clearGrid").addEventListener("click", clearGrid);
   
     // empty funcs for now, will add logic later
-    
-    function removeRow() {}
-    function removeColumn() {}
     function colorSingleCell() {}
     function colorUncoloredCells() {}
     function colorAllCells() {}
