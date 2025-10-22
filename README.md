@@ -1,9 +1,10 @@
 # Grid Maker
 
 ## Group Members
- Name                      | GitHub Username |
 
-| Mokhinabonu Ubaydulloeva | [@Mohiina](https://github.com/Mohiina) |
+Name:            Mokhinabonu Ubaydulloeva 
+GitHub Username: @Mohiina]
+https://github.com/Mohiina
 
 A simple interactive web app that lets users dynamically create, modify, and color a grid using HTML, CSS, and JavaScript.
 
